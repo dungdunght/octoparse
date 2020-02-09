@@ -312,7 +312,6 @@
         "id": "f5f803ee-87c8-4172-b947-a3cf02f4ccee",
         "source": "tuoitre.vn",
         "time_by_hour": 1,
-
         "type" : 1
     },
     {
@@ -354,7 +353,7 @@
     {
         "id": "c9d4121c-3242-4fde-b1df-0320670208b7",
         "source": "acb.com.vn",
-        "time_by_hour": 1,
+        "no_time": 1,
         "type" : 4
     },
     {

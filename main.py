@@ -69,14 +69,13 @@ if __name__ == '__main__':
 	with open('/home/dungnd/octoparse_to_mongo/config.json') as f:
 		config = json.load(f)
 	if mode == 'add_data':
-		for link in config:
-			task_id = link["id"]
-			source = link["source"]
-			times = link["times"] if ('times' in link) else 1
-			type = link["type"]
+		for item in config:
+			task_id = item["id"]
+			source = item["source"]
+			type = item["type"]
 			offset = -1
 			new_offset = 0
-			print("Processing article: ", source)
+			print("Adding data from article: ", source)
 			while new_offset != offset:
 				offset = new_offset
 				dataResult = get_data(base_url, token_entity, task_id, offset)
@@ -89,14 +88,23 @@ if __name__ == '__main__':
 							time = list_result[article].get("time", "")
 							link = list_result[article].get("link", "")
 							title = list_result[article].get("title", "")
-							try:
-								time = datetime.strptime(time, '%d/%m/%Y')
-								time = time.strftime('%d/%m/%Y')
-							except:
-								if ('time_by_hour' in link) and link["time_by_hour"]:
+							if ('no_time' in item) and item["no_time"]:
+								source_collection = mydb[source]
+								if not source_collection.count_documents({ "title": title }, limit = 1):
 									time = datetime.today().strftime('%d/%m/%Y')
+									source_collection.create_index([("title", pymongo.ASCENDING)], unique = True)
+									source_collection.insert_one(list_result[article])
 								else:
-									time = "Undefined"
+									continue
+							else:
+								try:
+									time = datetime.strptime(time, '%d/%m/%Y')
+									time = time.strftime('%d/%m/%Y')
+								except:
+									if ('time_by_hour' in item) and item["time_by_hour"]:
+										time = datetime.today().strftime('%d/%m/%Y')
+									else:
+										time = "Undefined"
 							list_result[article]["time"] = time
 							if not len(link) or not len(title):
 								time = "Undefined"
@@ -114,8 +122,9 @@ if __name__ == '__main__':
 						new_offset = dataResult['data']['offset']
 
 	elif mode == 'delete_data':
-		for x in config:
-			task_id = x["id"]
+		for item in config:
+			print("Deleting data from article: ", item["source"])
+			task_id = item["id"]
 			url = 'api/task/RemoveDataByTaskId?taskId=' + task_id 
 			util.request_t_post(base_url, url, token_entity['access_token'])
 
