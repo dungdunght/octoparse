@@ -74,8 +74,11 @@ if __name__ == '__main__':
 			source = link["source"]
 			times = link["times"] if ('times' in link) else 1
 			type = link["type"]
-			offset = 0
-			for time in range(times):
+			offset = -1
+			new_offset = 0
+			print("Processing article: ", source)
+			while new_offset != offset:
+				offset = new_offset
 				dataResult = get_data(base_url, token_entity, task_id, offset)
 				if 'error' in dataResult:
 					if dataResult['error'] == 'success' and 'dataList' in dataResult['data']:
@@ -83,7 +86,7 @@ if __name__ == '__main__':
 						myclient = pymongo.MongoClient("mongodb://admin:56879101112@localhost/admin")
 						mydb = myclient["News"]
 						for article in range(len(list_result)):
-							time = list_result[article]["time"]
+							time = list_result[article].get("time", "")
 							link = list_result[article].get("link", "")
 							title = list_result[article].get("title", "")
 							try:
@@ -108,7 +111,7 @@ if __name__ == '__main__':
 									continue
 							else:
 								current_collection.update(list_result[article], list_result[article], upsert=True)
-						offset = dataResult['data']['offset']
+						new_offset = dataResult['data']['offset']
 
 	elif mode == 'delete_data':
 		for x in config:

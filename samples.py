@@ -17,12 +17,12 @@ def refresh_token(base_url, refresh_token_id):
         Returns:
                 string -- a refreshed token string
         """
-        print('Refresh token with: ' + refresh_token_id)
+        # print('Refresh token with: ' + refresh_token_id)
         content = 'refresh_token=' + refresh_token_id + '&grant_type=refresh_token'
         response = requests.post(base_url + 'token', data = content)
         token_entity = response.json()
         refresh_token = token_entity.get('access_token',token_entity)
-        print(refresh_token)
+        # print(refresh_token)
         return refresh_token
 
 def get_data_by_offset(base_url, token, task_id, offset=0, size=100):
@@ -68,7 +68,7 @@ def get_data_by_offset(base_url, token, task_id, offset=0, size=100):
                                 "error_Description": "Action Success"
                         }
         """
-        print('GetTaskDataByOffset:', offset, ', size: ', size)
+        # print('GetTaskDataByOffset:', offset, ', size: ', size)
         url = 'api/allData/getDataOfTaskByOffset?taskId=%s&offset=%s&size=%s'%(task_id, offset, size)
         task_data_result = util.request_t_get(base_url, url, token)
         util.show_task_data(task_data_result)

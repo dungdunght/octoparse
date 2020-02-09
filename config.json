@@ -2,253 +2,213 @@
     {
         "id": "9db827e6-bf87-4002-b08c-748ee99ddc68",
         "source": "vtv.vn/kinh-te",
-        "time": 4,
         "type" : 1
     },
     {
 	   "id": "78a22a59-6aed-4070-ac4a-3fe2c93e4d4d",
 	   "source": "toquoc.vn/kinh-te",
-     "time": 4,
        "type" : 1
     },
     {
 	   "id": "a6d57e7c-4174-4056-ab08-d5b55403a475",
 	   "source": "laodong.vn/kinh-te",
-     "time": 4,
        "type" : 1
     },
     {
         "id": "dc970257-4d1b-4b1b-ad7a-22f4a3303a06",
         "source": "saigontimes.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "14f8ac04-a89c-46c0-8820-6f47a7b12bbb",
         "source": "vnexpress.vn/kinh-doanh",
-        "times": 4,
         "type" : 1
     },
     {
         "id": "f8cfc1e4-248b-432a-b56b-46e019e85923",
         "source": "nielsen.com/us/en/insights",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "50b38c27-a1d2-4546-ac64-2a1bccbbca1b",
         "source": "blog.marketresearch.com",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "fc0a6567-28c5-49a0-a2a8-fd1030b58d07",
         "source": "go.forrester.com/blogs",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "e1af0107-2018-4393-91bc-c6c9ce0c1e11",
         "source": "greenbookblog.org",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "5f405358-af07-4d82-8379-b412bfc882bf",
         "source": "blog.gfk.com",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "2692cae9-0ad7-424f-9634-9e7539ae5c31",
         "source": "mintel.com/blog",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "2fef240e-3fc9-4259-a783-6d6717da45fd",
         "source": "confirmit.com/Resources",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "0e3f0ca8-9c73-42f6-b87c-834b3eb23b86",
         "source": "blog.globalwebindex.com",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "f43c0a79-ea03-4e7d-85fb-4e8090d60754",
         "source": "rwconnect.esomar.org",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "f714dbfe-fe98-48dd-9a5c-865baa815440",
         "source": "blog.fieldagent.net",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "8c791cf2-4a99-4fba-a028-95323cf36416",
         "source": "blog.askia.com",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "086beb3e-2380-4d47-9b94-f14331f48d42",
         "source": "blog.alliedmarketresearch.com",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "d60552e6-0008-4c4c-9165-92aecb9d41be",
         "source": "gminsights.com/blogs",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "4067fe16-5526-45f6-8251-5afde502d442",
         "source": "pvcombank.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "157c8e6d-250f-4f25-b71d-e3ec5ff49204",
         "source": "techcombank.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "b082eb81-d507-4cd4-8aaa-9d1997ca2495",
         "source": "bidv.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "7bdf1269-bfb1-4fa4-9870-3f3f7da2cf07",
         "source": "vietcombank.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "a6f1bcb3-03a1-4b99-907a-6574926d94c3",
         "source": "shb.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "202d9d9c-413a-435e-b1ed-54ad3fc68140",
         "source": "seabank.com.vn",
-        "time": 4,
         "type" : 3
     },
     {
         "id": "d85041bd-ad76-405b-92d9-9ab172cfe53e",
         "source": "moit.gov.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "7e1ffa13-1c30-4b63-aaf4-424126cf4ef1",
         "source": "most.gov.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "316e30ef-4cfa-421c-ba76-acc54a5bb7ae",
         "source": "mpi.gov.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "9db15846-d5fe-45f6-b257-735ba6b14e28",
         "source": "customs.gov.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "98c1040b-934f-40c5-94a5-aaffc64075e2",
         "source": "vusta.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "85ad7c54-8223-4ac3-8565-321f5ffd6539",
         "source": "mof.gov.vn",
-        "time": 4,
         "type" : 2
     },
     {
         "id": "56e44f49-cf53-47b8-86ad-36113538a67a",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "b35eb723-d61a-414a-8b3e-5e590e0de40d",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "48776c2a-e8cb-4706-8403-7f75fbf13c81",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "034531a9-5dfd-475a-9a89-cd1b79139cda",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "88bfae36-fcc1-413d-80a9-da56d018937e",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "0f1515ca-1772-4ae9-acfe-8e83b06dbe3b",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "f22a003e-ed12-46af-98f2-614bd1074b2c",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "bfb374ae-8309-459f-9092-284a1549ef4f",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "2d829a4f-f9cc-4733-b669-dc7a99791fc5",
         "source": "vneconomy.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "ab179eb2-a9b4-4605-9b5f-78e1da772d34",
         "source": "mard.gov.vn",
-        "time": 4,
+
         "type" : 2
     },
     {
         "id": "3c5990b3-00db-4561-a4d2-eef01d9f9bc2",
         "source": "monre.gov.vn",
-        "time": 4,
+
         "type" : 2
     },
     {
         "id": "5769ea22-bb8f-4bf7-8c3d-b1966530d9c2",
         "source": "asia.nikkei.com",
-        "time": 4,
         "time_by_hour": 1,
         "type" : 1
     },
@@ -256,84 +216,72 @@
         "id": "75b6fb54-262a-4d02-8e27-0f3b38076e20",
         "source": "asia.nikkei.com",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "fc0e55ed-a063-4339-8e8e-b7b33f79af7c",
         "source": "asia.nikkei.com",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "8f2e934e-a5aa-4ea7-902b-4088c466e467",
         "source": "carnegieendowment.org",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "a2694e7b-2123-48d2-9dd5-650bb5218c5b",
         "source": "asiatimes.com",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "3d7da353-3e0c-47bc-b95b-dd4f4ae66288",
         "source": "asiatimes.com",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "6e959084-0302-4531-8192-cc9b3fd14327",
         "source": "businessinsider.com",
-        "times": 10,
         "type" : 1
     },
     {
         "id": "7531d54e-346d-40b7-84fb-72bde54ff2cd",
         "source": "www.economist.com",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "5925cdfc-1efe-4c92-91b5-70338e139107",
         "source": "www.nytimes.com",
-        "time": 10,
+        "times": 10,
         "type" : 1
     },
     {
         "id": "9ca700d9-0b95-4c97-bb7a-2bb30329bfd0",
         "source": "www.project-syndicate.org",
-        "time": 4,
         "type" : 4
     },
     {
         "id": "66453bd7-75ce-4e54-bf05-82fe495e5c94",
         "time_by_hour": 1,
         "source": "www.ndh.vn",
-        "time": 4,
         "type" : 1
     },
     {
         "id": "9e102ad4-a79c-4829-a0de-e0137f2cac73",
         "source": "www.nhaquanly.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "2b9a88a6-38f0-4977-8ea4-7e85cb42ff66",
         "source": "cafef.vn",
         "time_by_hour": 1,
-        "times": 4,
         "type" : 1
     },
     {
         "id": "b9668a5a-ebd7-425c-9a01-82a45227fe29",
         "source": "sbv.gov.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 2
     },
     {
@@ -352,7 +300,6 @@
         "id": "baf95cdd-70a4-4c35-9f93-e77be2d5cbcf",
         "source": "vietstock.vn",
         "time_by_hour": 1,
-        "times": 4,
         "type" : 1
     },
     {
@@ -365,126 +312,109 @@
         "id": "f5f803ee-87c8-4172-b947-a3cf02f4ccee",
         "source": "tuoitre.vn",
         "time_by_hour": 1,
-        "times": 4,
+
         "type" : 1
     },
     {
         "id": "e680df45-5c3f-4b84-9d5a-7a0560965685",
         "source": "thanhnien.vn",
         "time_by_hour": 1,
-        "times": 4,
         "type" : 1
     },
     {
         "id": "665427ca-78d0-41cb-9990-32cb4a0850cd",
         "source": "brandsvietnam.com",
         "time_by_hour": 1,
-        "times": 4,
         "type" : 4
     },
     {
         "id": "ad6dd8be-b550-4a7b-b7cc-47a3166dc706",
         "source": "mbbank.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "7fc04dec-6188-4b43-8ab5-71d5fa0aa030",
         "source": "zing.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "43fabfb1-1cb4-498a-b9bf-5a010a43e1f4",
         "source": "dantri.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "f26834c3-afe1-476d-94c8-df6c059011e1",
         "source": "abbank.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "c9d4121c-3242-4fde-b1df-0320670208b7",
         "source": "acb.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "30555a66-db31-4458-994a-6201c4e9cbec",
         "source": "agribank.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "70218fb6-c083-4278-a539-35f8cdd545eb",
         "source": "bacabank.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "d8a047f6-aea7-4259-b707-17de42db6b3d",
         "source": "lietvietpostbank.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "a42a4e2a-05c2-425f-acfb-51d6c3d53083",
         "source": "sacombank.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "56fa4550-f09a-48a1-81d8-6e996b6d4618",
         "source": "vietinbank.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "5f89fd6d-b5f0-4092-8b2f-c58b84d89292",
         "source": "vpbank.com.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 4
     },
     {
         "id": "b8e686a1-b634-4ca6-ba8e-4e1e71d95717",
         "source": "thesaigontime.vn_taichinh",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "4035a2ed-d285-441f-833c-b1ae3567aca6",
         "source": "cafef.vn_taichinh",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "89e1bf91-3815-4645-9797-d03683cbc5fe",
         "source": "thoibaonganhang.vn",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     },
     {
         "id": "b226cc0e-e387-4d23-94fb-e9da4fac7690",
         "source": "thoibaotaichinhviet.vh",
         "time_by_hour": 1,
-        "time": 4,
         "type" : 1
     }
 ]
