@@ -369,12 +369,6 @@
         "type" : 4
     },
     {
-        "id": "d8a047f6-aea7-4259-b707-17de42db6b3d",
-        "source": "lietvietpostbank.com.vn",
-        "time_by_hour": 1,
-        "type" : 4
-    },
-    {
         "id": "a42a4e2a-05c2-425f-acfb-51d6c3d53083",
         "source": "sacombank.com.vn",
         "time_by_hour": 1,
@@ -412,7 +406,7 @@
     },
     {
         "id": "b226cc0e-e387-4d23-94fb-e9da4fac7690",
-        "source": "thoibaotaichinhviet.vh",
+        "source": "thoibaotaichinhviet.vn",
         "time_by_hour": 1,
         "type" : 1
     }

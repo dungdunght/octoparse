@@ -9,6 +9,7 @@ import getpass
 import samples
 import json
 import pymongo
+import logging
 from datetime import datetime
 
 
@@ -82,7 +83,7 @@ if __name__ == '__main__':
 				if 'error' in dataResult:
 					if dataResult['error'] == 'success' and 'dataList' in dataResult['data']:
 						list_result = dataResult['data']['dataList']
-						myclient = pymongo.MongoClient("mongodb://admin:56879101112@localhost/admin")
+						myclient = pymongo.MongoClient("mongodb://dungnd:drogba123@209.97.173.50/News?authSource=admin")
 						mydb = myclient["News"]
 						for article in range(len(list_result)):
 							time = list_result[article].get("time", "")
@@ -92,8 +93,11 @@ if __name__ == '__main__':
 								source_collection = mydb[source]
 								if not source_collection.count_documents({ "title": title }, limit = 1):
 									time = datetime.today().strftime('%d/%m/%Y')
-									source_collection.create_index([("title", pymongo.ASCENDING)], unique = True)
-									source_collection.insert_one(list_result[article])
+									try:
+										source_collection.create_index([("title", pymongo.ASCENDING)], unique = True)
+										source_collection.insert_one(list_result[article])
+									except pymongo.errors.DuplicateKeyError:
+										continue
 								else:
 									continue
 							else:
@@ -101,7 +105,7 @@ if __name__ == '__main__':
 									time = datetime.strptime(time, '%d/%m/%Y')
 									time = time.strftime('%d/%m/%Y')
 								except:
-									if ('time_by_hour' in item) and item["time_by_hour"]:
+									if ('time_by_hour' in item) and item["time_by_hour"] and len(time):
 										time = datetime.today().strftime('%d/%m/%Y')
 									else:
 										time = "Undefined"
