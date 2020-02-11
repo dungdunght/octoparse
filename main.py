@@ -11,6 +11,7 @@ import json
 import pymongo
 import logging
 from datetime import datetime
+from datetime import timedelta
 
 
 def log_in(base_url, username, password): 	
@@ -54,6 +55,14 @@ def get_data(base_url, token_entity, task_id, offset = 0, size = 1000):
 	result = samples.get_data_by_offset(base_url, token, task_id, offset, size)
 	return result
 
+def replace_word_by_time(replacing_map, time_text):
+	for day_string in replacing_map:
+		for word in replacing_map[day_string]:
+			if word in time_text:
+				time = datetime.today() - timedelta(days=int(day_string))
+				return time.strftime('%d/%m/%Y')
+	return "Undefined"
+
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		print('Please sepecify your mode!')
@@ -89,7 +98,9 @@ if __name__ == '__main__':
 							time = list_result[article].get("time", "")
 							link = list_result[article].get("link", "")
 							title = list_result[article].get("title", "")
-							if ('no_time' in item) and item["no_time"]:
+							if ('time_replacing_word' in item) and len(item["time_replacing_word"]):
+								time = replace_word_by_time(item["time_replacing_word"], time)
+							elif ('no_time' in item) and item["no_time"]:
 								source_collection = mydb[source]
 								if not source_collection.count_documents({ "title": title }, limit = 1):
 									time = datetime.today().strftime('%d/%m/%Y')
@@ -126,11 +137,15 @@ if __name__ == '__main__':
 						new_offset = dataResult['data']['offset']
 
 	elif mode == 'delete_data':
+		if len(sys.argv) < 3:
+			print("Please sepecify your frequency!")
+			os.exit(-1)
+		daily_frequency = sys.argv[2]
 		for item in config:
-			print("Deleting data from article: ", item["source"])
-			task_id = item["id"]
-			url = 'api/task/RemoveDataByTaskId?taskId=' + task_id 
-			util.request_t_post(base_url, url, token_entity['access_token'])
+			if (daily_frequency != 'daily' or (daily_frequency == 'daily' and ('daily_delete' in item) and item["daily_delete"])):
+				print("Deleting data from article: ", item["source"])
+				task_id = item["id"]
+				url = 'api/task/RemoveDataByTaskId?taskId=' + task_id
+				util.request_t_post(base_url, url, token_entity['access_token'])
 
 # End
-		

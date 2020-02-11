@@ -323,7 +323,11 @@
     {
         "id": "665427ca-78d0-41cb-9990-32cb4a0850cd",
         "source": "brandsvietnam.com",
-        "time_by_hour": 1,
+        "time_replacing_word": {
+            "0" : ["hôm nay"],
+            "1" : ["hôm qua"]
+        },
+        "daily_delete" : 1,
         "type" : 4
     },
     {
