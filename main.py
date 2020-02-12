@@ -98,9 +98,7 @@ if __name__ == '__main__':
 							time = list_result[article].get("time", "")
 							link = list_result[article].get("link", "")
 							title = list_result[article].get("title", "")
-							if ('time_replacing_word' in item) and len(item["time_replacing_word"]):
-								time = replace_word_by_time(item["time_replacing_word"], time)
-							elif ('no_time' in item) and item["no_time"]:
+							if ('no_time' in item) and item["no_time"]:
 								source_collection = mydb[source]
 								if not source_collection.count_documents({ "title": title }, limit = 1):
 									time = datetime.today().strftime('%d/%m/%Y')
@@ -118,6 +116,8 @@ if __name__ == '__main__':
 								except:
 									if ('time_by_hour' in item) and item["time_by_hour"] and len(time):
 										time = datetime.today().strftime('%d/%m/%Y')
+									elif ('time_replacing_word' in item) and len(item["time_replacing_word"]):
+										time = replace_word_by_time(item["time_replacing_word"], time)
 									else:
 										time = "Undefined"
 							list_result[article]["time"] = time
